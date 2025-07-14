@@ -1,4 +1,10 @@
 /* style.css */
+/* Логотип курса */
+.logo {
+  height: 40px;           /* задаёт высоту логотипа */
+  vertical-align: middle; /* выравнивает по центру с текстом */
+  margin-right: 10px;     /* отступ справа от логотипа */
+}
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap');
 :root {
   --primary-color: #2c3e50;
