@@ -29,13 +29,14 @@ body {
 
 nav {
   display: flex;
-  align-items: center;         /* выравнивание по вертикали */
-  justify-content: flex-start; /* логотип слева, ссылки — после него */
+  justify-content: flex-start; /* всё прижато к левой границе */
   background: var(--primary-color);
   padding: 15px 20px;
   border-radius: 8px;
   margin-bottom: 30px;
 }
+
+
 
 nav a {
   color: #ecf0f1;
