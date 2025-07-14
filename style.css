@@ -29,15 +29,18 @@ body {
 
 nav {
   display: flex;
-  justify-content: flex-start; /* всё прижато к левой границе */
+  align-items: center;
+  gap: 20px;
   background: var(--primary-color);
-  padding: 15px 20px;
+  padding: 10px 20px;
   border-radius: 8px;
   margin-bottom: 30px;
 }
-
-
-
+.logo {
+  height: 30px;
+  width: auto;
+  flex-shrink: 0;
+}
 nav a {
   color: #ecf0f1;
   margin: 0 15px;
