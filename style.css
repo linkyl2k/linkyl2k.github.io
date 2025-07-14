@@ -29,7 +29,6 @@ body {
 
 nav {
   display: flex;
-  align-items: center;
   gap: 20px;
   background: var(--primary-color);
   padding: 10px 20px;
@@ -37,7 +36,7 @@ nav {
   margin-bottom: 30px;
 }
 .logo {
-  height: 30px;
+  height: 10px;
   width: auto;
   flex-shrink: 0;
 }
