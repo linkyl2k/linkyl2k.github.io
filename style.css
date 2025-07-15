@@ -1,17 +1,5 @@
-/* style.css */
-/* контейнер для логотипа над навигацией */
-.site-logo {
-  text-align: left;    /* логотип прижат влево */
-  padding: 20px;       /* отступы вокруг */
-  background: #fff;    /* белый фон */
-}
-
-/* сам логотип */
-.site-logo .logo {
-  height: 40px;        /* или столько, сколько нужно */
-  width: auto;
-}
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap');
+
 :root {
   --primary-color: #2c3e50;
   --secondary-color: #3498db;
@@ -22,7 +10,7 @@
   --max-width: 900px;
 }
 
-/* Сброс отступов */
+/* Сброс отступов и основная типографика */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -39,31 +27,40 @@ body {
   padding: 20px;
 }
 
-nav {
+/* Header: логотип и навигация */
+.site-header {
   display: flex;
-  gap: 20px;
-  background: var(--primary-color);
+  align-items: center;
+  background: #fff;
   padding: 10px 20px;
   border-radius: 8px;
   margin-bottom: 30px;
 }
-.logo {
-  height: 200px;
+
+.site-header .logo {
+  height: 40px;
   width: auto;
+  margin-right: 20px;
   flex-shrink: 0;
 }
-nav a {
-  color: #ecf0f1;
-  margin: 0 15px;
+
+.site-header nav {
+  display: flex;
+  gap: 20px;
+}
+
+.site-header nav a {
+  color: var(--primary-color);
   text-decoration: none;
   font-weight: 600;
   transition: color .3s;
 }
 
-nav a:hover {
+.site-header nav a:hover {
   color: var(--secondary-color);
 }
 
+/* Основные заголовки */
 h1, h2, h3 {
   color: var(--primary-color);
   margin-bottom: 15px;
@@ -101,6 +98,7 @@ ul li a:hover {
   color: var(--link-hover);
 }
 
+/* Встроенные iframe */
 iframe {
   display: block;
   width: 100%;
@@ -109,6 +107,7 @@ iframe {
   margin: 20px auto;
 }
 
+/* Навигация между модулями */
 .module-nav {
   display: flex;
   justify-content: space-between;
@@ -126,6 +125,7 @@ iframe {
   color: var(--link-hover);
 }
 
+/* Footer */
 footer {
   text-align: center;
   margin-top: 50px;
