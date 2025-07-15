@@ -38,6 +38,7 @@ body {
 .site-logo-container {
   background: #fff;
   display: flex;
+  justify-content: flex-start;
   align-items: center;
   padding: 10px 10px 10px 0;
   border-top-left-radius: 8px;
