@@ -1,4 +1,16 @@
 /* style.css */
+/* контейнер для логотипа над навигацией */
+.site-logo {
+  text-align: left;    /* логотип прижат влево */
+  padding: 20px;       /* отступы вокруг */
+  background: #fff;    /* белый фон */
+}
+
+/* сам логотип */
+.site-logo .logo {
+  height: 40px;        /* или столько, сколько нужно */
+  width: auto;
+}
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap');
 :root {
   --primary-color: #2c3e50;
